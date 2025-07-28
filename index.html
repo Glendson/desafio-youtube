@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone - Desafio Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <button class="icon-button" aria-label="Menu">☰</button>
+            <div class="logo">YouTube</div>
+        </div>
+        
+        <div class="header-center">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="search-button" aria-label="Buscar">🔍</button>
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <button class="icon-button" aria-label="Criar">📹</button>
+            <button class="icon-button" aria-label="Notificações">🔔</button>
+            <div class="avatar" aria-label="Usuário">U</div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <div class="sidebar-item active">
+                    <span class="icon" aria-hidden="true">🏠</span>
+                    <span>Início</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="icon" aria-hidden="true">🔥</span>
+                    <span>Em alta</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="icon" aria-hidden="true">📺</span>
+                    <span>Inscrições</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="icon" aria-hidden="true">📁</span>
+                    <span>Biblioteca</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="icon" aria-hidden="true">⏱️</span>
+                    <span>Histórico</span>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="content">
+            <div class="video-section">
+                <!-- Main Video Player -->
+                <div class="video-main">
+                    <!-- Video Player -->
+                    <div class="video-player" role="img" aria-label="Player de vídeo">
+                        <!-- Placeholder para video player -->
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="video-info">
+                        <h1 class="video-title">Desafio de Flexbox - Clonando o YouTube com CSS Puro</h1>
+                        
+                        <div class="video-meta">
+                            <span>1.2M visualizações • há 2 dias</span>
+                            <div class="video-actions">
+                                <button class="action-button" aria-label="Curtir">
+                                    <span>👍</span>
+                                    <span>15K</span>
+                                </button>
+                                <button class="action-button" aria-label="Não curtir">
+                                    <span>👎</span>
+                                    <span>234</span>
+                                </button>
+                                <button class="action-button" aria-label="Compartilhar">
+                                    <span>📤</span>
+                                    <span>Compartilhar</span>
+                                </button>
+                                <button class="action-button" aria-label="Salvar">
+                                    <span>💾</span>
+                                    <span>Salvar</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Channel Info -->
+                        <div class="channel-info">
+                            <div class="channel-avatar" aria-label="Canal">C</div>
+                            <div class="channel-details">
+                                <div class="channel-name">Canal de Programação</div>
+                                <div class="channel-subs">1.5M inscritos</div>
+                            </div>
+                            <button class="action-button subscribe-button" aria-label="Inscrever-se">
+                                INSCREVER-SE
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="video-description">
+                        <p class="description-text">
+                            Neste vídeo vamos clonar a interface do YouTube usando apenas HTML e CSS, 
+                            colocando em prática todos os conceitos de Flexbox aprendidos. 
+                            Este é um projeto perfeito para seu portfólio!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Recommended Videos -->
+                <aside class="recommended">
+                    <h3 class="recommended-title">Próximos</h3>
+                    
+                    <div class="video-card" role="article">
+                        <div class="video-thumbnail" aria-label="Thumbnail do vídeo"></div>
+                        <div class="video-card-info">
+                            <h4 class="video-card-title">Como usar Flexbox - Tutorial Completo</h4>
+                            <p class="video-card-channel">Tech Academy</p>
+                            <p class="video-card-stats">245K visualizações • há 1 semana</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" role="article">
+                        <div class="video-thumbnail" aria-label="Thumbnail do vídeo"></div>
+                        <div class="video-card-info">
+                            <h4 class="video-card-title">CSS Grid vs Flexbox - Qual usar?</h4>
+                            <p class="video-card-channel">Dev Pro</p>
+                            <p class="video-card-stats">89K visualizações • há 3 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" role="article">
+                        <div class="video-thumbnail" aria-label="Thumbnail do vídeo"></div>
+                        <div class="video-card-info">
+                            <h4 class="video-card-title">Criando Layouts Responsivos com Flexbox</h4>
+                            <p class="video-card-channel">Frontend Master</p>
+                            <p class="video-card-stats">156K visualizações • há 5 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" role="article">
+                        <div class="video-thumbnail" aria-label="Thumbnail do vídeo"></div>
+                        <div class="video-card-info">
+                            <h4 class="video-card-title">Projeto Real: Clone do Netflix com CSS</h4>
+                            <p class="video-card-channel">Code Challenge</p>
+                            <p class="video-card-stats">78K visualizações • há 2 semanas</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" role="article">
+                        <div class="video-thumbnail" aria-label="Thumbnail do vídeo"></div>
+                        <divOcorreu um erro ao tentar editar o arquivo `youtube-clone.html` diretamente. Para contornar isso, vou recriar o arquivo completo com o CSS separado referenciado corretamente.
+
+Vou criar o arquivo `youtube-clone.html` completo com a referência ao CSS externo `youtube-clone.css`.
+
+<create_file>
+<path>youtube-clone.html</path>
+<content>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Clone - Desafio Flexbox</title>
+    <link rel="stylesheet" href="youtube-clone.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <button class="icon-button" aria-label="Menu">☰</button>
+            <div class="logo">YouTube</div>
+        </div>
+
+        <div class="header-center">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Pesquisar" aria-label="Pesquisar" />
+                <button class="search-button" aria-label="Buscar">🔍</button>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <button class="icon-button" aria-label="Criar">📹</button>
+            <button class="icon-button" aria-label="Notificações">🔔</button>
+            <div class="avatar" aria-label="Usuário">U</div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <div class="sidebar-item active">
+                    <span class="icon" aria-hidden="true">🏠</span>
+                    <span>Início</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="icon" aria-hidden="true">🔥</span>
+                    <span>Em alta</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="icon" aria-hidden="true">📺</span>
+                    <span>Inscrições</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="icon" aria-hidden="true">📁</span>
+                    <span>Biblioteca</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="icon" aria-hidden="true">⏱️</span>
+                    <span>Histórico</span>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="content">
+            <div class="video-section">
+                <!-- Main Video Player -->
+                <div class="video-main">
+                    <!-- Video Player -->
+                    <div class="video-player" role="img" aria-label="Player de vídeo">
+                        <!-- Placeholder para video player -->
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="video-info">
+                        <h1 class="video-title">Desafio de Flexbox - Clonando o YouTube com CSS Puro</h1>
+
+                        <div class="video-meta">
+                            <span>1.2M visualizações • há 2 dias</span>
+                            <div class="video-actions">
+                                <button class="action-button" aria-label="Curtir">
+                                    <span>👍</span>
+                                    <span>15K</span>
+                                </button>
+                                <button class="action-button" aria-label="Não curtir">
+                                    <span>👎</span>
+                                    <span>234</span>
+                                </button>
+                                <button class="action-button" aria-label="Compartilhar">
+                                    <span>📤</span>
+                                    <span>Compartilhar</span>
+                                </button>
+                                <button class="action-button" aria-label="Salvar">
+                                    <span>💾</span>
+                                    <span>Salvar</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Channel Info -->
+                        <div class="channel-info">
+                            <div class="channel-avatar" aria-label="Canal">C</div>
+                            <div class="channel-details">
+                                <div class="channel-name">Canal de Programação</div>
+                                <div class="channel-subs">1.5M inscritos</div>
+                            </div>
+                            <button class="action-button subscribe-button" aria-label="Inscrever-se">
+                                INSCREVER-SE
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="video-description">
+                        <p class="description-text">
+                            Neste vídeo vamos clonar a interface do YouTube usando apenas HTML e CSS,
+                            colocando em prática todos os conceitos de Flexbox aprendidos.
+                            Este é um projeto perfeito para seu portfólio!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Recommended Videos -->
+                <aside class="recommended">
+                    <h3 class="recommended-title">Próximos</h3>
+
+                    <div class="video-card" role="article">
+                        <div class="video-thumbnail" aria-label="Thumbnail do vídeo"></div>
+                        <div class="video-card-info">
+                            <h4 class="video-card-title">Como usar Flexbox - Tutorial Completo</h4>
+                            <p class="video-card-channel">Tech Academy</p>
+                            <p class="video-card-stats">245K visualizações • há 1 semana</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" role="article">
+                        <div class="video-thumbnail" aria-label="Thumbnail do vídeo"></div>
+                        <div class="video-card-info">
+                            <h4 class="video-card-title">CSS Grid vs Flexbox - Qual usar?</h4>
+                            <p class="video-card-channel">Dev Pro</p>
+                            <p class="video-card-stats">89K visualizações • há 3 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" role="article">
+                        <div class="video-thumbnail" aria-label="Thumbnail do vídeo"></div>
+                        <div class="video-card-info">
+                            <h4 class="video-card-title">Criando Layouts Responsivos com Flexbox</h4>
+                            <p class="video-card-channel">Frontend Master</p>
+                            <p class="video-card-stats">156K visualizações • há 5 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" role="article">
+                        <div class="video-thumbnail" aria-label="Thumbnail do vídeo"></div>
+                        <div class="video-card-info">
+                            <h4 class="video-card-title">Projeto Real: Clone do Netflix com CSS</h4>
+                            <p class="video-card-channel">Code Challenge</p>
+                            <p class="video-card-stats">78K visualizações • há 2 semanas</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" role="article">
+                        <div class="video-thumbnail" aria-label="Thumbnail do vídeo"></div>
+                        <div class="video-card-info">
+                            <h4 class="video-card-title">Flexbox Properties - Guia Visual</h4>
+                            <p class="video-card-channel">CSS Tips</p>
+                            <p class="video-card-stats">234K visualizações • há 1 mês</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
